@@ -61,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
                         new PrimaryDrawerItem().withName("Nutrition").withIcon(GoogleMaterial.Icon.gmd_brightness_low).withIdentifier(2),
                         new DividerDrawerItem(),                                                                                            //Divider
                         new SecondaryDrawerItem().withName("Tips & Tricks").withIcon(GoogleMaterial.Icon.gmd_done_all).withIdentifier(3),   //Secondary Items
-                        new SecondaryDrawerItem().withName("Tools").withIcon(GoogleMaterial.Icon.gmd_build).withIdentifier(4)
+                        new SecondaryDrawerItem().withName("Tools").withIcon(GoogleMaterial.Icon.gmd_build).withIdentifier(4),
+                        new SecondaryDrawerItem().withName("About").withIcon(GoogleMaterial.Icon.gmd_person).withIdentifier(5)
                 ).withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(AdapterView<?> adapterView, View view, int i, long l, IDrawerItem iDrawerItem) {
@@ -75,14 +76,19 @@ public class MainActivity extends AppCompatActivity {
                                     ft.replace(R.id.container, h);
                                     ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                                     ft.commit();
+                                    break;
                                 case 1:
                                     //Performs action when the section is selected
+                                    break;
                                 case 2:
                                     //Performs action when the section is selected
+                                    break;
                                 case 3:
                                     //Performs action when the section is selected
+                                    break;
                                 case 4:
                                     //Performs action when the section is selected
+                                    break;
                             }
 
                         }
